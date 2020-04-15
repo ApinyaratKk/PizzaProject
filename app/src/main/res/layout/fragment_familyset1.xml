@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".familyset1"
+    android:backgroundTint="@color/font_color">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/familyset1"
+        android:textColor="@color/font_color"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <ImageView
+        android:id="@+id/beefpizza"
+        android:layout_width="157dp"
+        android:layout_height="204dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="50dp"
+        android:src="@drawable/beefpizza" />
+
+    <ImageView
+        android:id="@+id/pizza_bbqchickendeluxe"
+        android:layout_width="155dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/sewwtchick" />
+
+    <TextView
+        android:id="@+id/textview_beefpizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="235dp"
+        android:layout_marginEnd="120dp"
+        android:text="@string/beefpizza"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/textview_bbqchickendeluxe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pizza_bbq_chicken_deluxe"
+        android:layout_marginTop="235dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginLeft="60dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="265dp"
+        android:layout_marginBottom="470dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textview_baconsuperdelight_price"
+            android:layout_width="61dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="88dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginEnd="128dp"
+            android:layout_marginRight="200dp"
+            android:text="@string/_169_baht"
+            android:textColor="#3a727f" />
+
+        <TextView
+            android:id="@+id/textview_bbqchickendeluxe_price"
+            android:layout_width="61dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginEnd="128dp"
+            android:layout_marginRight="200dp"
+            android:text="@string/_169_baht"
+            android:textColor="#3a727f" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="290dp"
+        android:layout_marginBottom="390dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Minusbaconsuperdelight"
+                android:layout_width="29dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="140dp"
+                android:background="@drawable/custom_button_minusplus"
+                android:text="@string/minus"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/orderbaconsuperdelight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="@string/_0"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/Plusbaconsuperdelight"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="440dp"
+                android:background="@drawable/custom_button_minusplus"
+                android:text="@string/plus"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Minusbbqchickendeluxe"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="140dp"
+                android:background="@drawable/custom_button_minusplus"
+                android:text="@string/minus"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/orderbbqchickendeluxe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="@string/_0"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/Plusbbqchickendeluxe"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="440dp"
+                android:background="@drawable/custom_button_minusplus"
+                android:text="@string/plus"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="310dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/pizza_hawaiian"
+            android:layout_width="155dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/salmonsalad"
+            android:contentDescription="@string/todo" />
+        <ImageView
+            android:id="@+id/pizza_tropicalseafood"
+            android:layout_width="155dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/cornsoup"
+            android:contentDescription="@string/todo" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginBottom="267dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textview_hawaiian"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginRight="200dp"
+            android:text="@string/pizza_hawaiian"
+            android:textColor="@color/colorPrimary" />
+        <TextView
+            android:id="@+id/textview_tropicalseafood"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginRight="200dp"
+            android:text="@string/pizza_tropical_seafood"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="530dp"
+        android:layout_marginBottom="235dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textview_hawaiian_price"
+            android:layout_width="61dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="85dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginEnd="128dp"
+            android:layout_marginRight="200dp"
+            android:text="@string/_169_baht"
+            android:textColor="#3a727f" />
+        <TextView
+            android:id="@+id/textview_tropicalseafood_price"
+            android:layout_width="61dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginEnd="128dp"
+            android:layout_marginRight="200dp"
+            android:text="@string/_199_baht"
+            android:textColor="#3a727f" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="550dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/Minushawaiian"
+            android:layout_width="29dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="140dp"
+            android:background="@drawable/custom_button_minusplus"
+            android:text="@string/minus"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/orderhawaiian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="@string/_0"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/Plushawaiian"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/custom_button_minusplus"
+            android:text="@string/plus"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/Minustropicalseafood"
+            android:layout_width="29dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginLeft="140dp"
+            android:background="@drawable/custom_button_minusplus"
+            android:text="@string/minus"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/ordertropicalseafood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="@string/_0"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/Plustropicalseafood"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/custom_button_minusplus"
+            android:text="@string/plus"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

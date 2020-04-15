@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pizza">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="90dp"
+        android:text="@string/pizza"
+        android:textColor="#6c6c8c"
+        android:textSize="38sp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/beefpizza"
+        android:layout_width="157dp"
+        android:layout_height="204dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="50dp"
+        android:src="@drawable/beefpizza" />
+
+    <ImageView
+        android:id="@+id/pizza_bbqcpizza"
+        android:layout_width="155dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/bbqpizza" />
+    <TextView
+        android:id="@+id/textview_beefpizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/beefpizza"
+        android:layout_marginTop="255dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="60dp"
+        android:textColor="#358BB5" />
+
+    <TextView
+        android:id="@+id/textview_bbqpizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bbqpizza"
+        android:layout_marginTop="255dp"
+        android:layout_marginStart="255dp"
+        android:layout_marginLeft="60dp"
+        android:textColor="#358BB5"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="285dp"
+        android:layout_marginBottom="470dp">
+        <TextView
+            android:id="@+id/textview_beefpizza_price"
+            android:layout_width="61dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="85dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginEnd="128dp"
+            android:layout_marginRight="200dp"
+            android:text="@string/_199_baht"
+            android:textColor="#358BB5" />
+        <TextView
+            android:id="@+id/textview_bbqpizza_price"
+            android:layout_width="61dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginEnd="128dp"
+            android:layout_marginRight="200dp"
+            android:text="@string/_199_baht"
+            android:textColor="#358BB5" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginBottom="390dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Minusbeefpizza"
+                android:layout_width="29dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="140dp"
+                android:background="@drawable/custom_button_minusplus"
+                android:text="@string/minus"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/orderbeefpizza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="@string/_0"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/Plusbeefpizza"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="440dp"
+                android:background="@drawable/custom_button_minusplus"
+                android:text="@string/plus"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Minusbbqpizza"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="140dp"
+                android:background="@drawable/custom_button_minusplus"
+                android:text="@string/minus"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/orderbbqpizza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="@string/_0"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/Plusbbqpizza"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="440dp"
+                android:background="@drawable/custom_button_minusplus"
+                android:text="@string/plus"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="330dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/cornpizza"
+            android:layout_width="155dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/cornpizza"
+            android:contentDescription="@string/todo" />
+        <ImageView
+            android:id="@+id/tunapizza"
+            android:layout_width="155dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/tunapizza"
+            android:contentDescription="@string/todo" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="520dp"
+        android:layout_marginBottom="267dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textview_cornpizza"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginRight="200dp"
+            android:text="@string/cornpizza"
+            android:textColor="#358BB5" />
+        <TextView
+            android:id="@+id/textview_tunapizza"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="200dp"
+            android:text="@string/tunapizza"
+            android:textColor="#358BB5" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:layout_marginBottom="235dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textview_cornpizza_price"
+            android:layout_width="61dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="85dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginEnd="128dp"
+            android:layout_marginRight="200dp"
+            android:text="@string/_199_baht"
+            android:textColor="#358BB5" />
+        <TextView
+            android:id="@+id/textview_tunapizza_price"
+            android:layout_width="61dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginEnd="128dp"
+            android:layout_marginRight="200dp"
+            android:text="@string/_199_baht"
+            android:textColor="#358BB5" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="570dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/Minuscornpizza"
+            android:layout_width="29dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="140dp"
+            android:background="@drawable/custom_button_minusplus"
+            android:text="@string/minus"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/ordercornpizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="@string/_0"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/Pluscornpizza"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/custom_button_minusplus"
+            android:text="@string/plus"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/Minustunapizza"
+            android:layout_width="29dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginLeft="140dp"
+            android:background="@drawable/custom_button_minusplus"
+            android:text="@string/minus"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/ordertunapizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="@string/_0"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/Plustunapizza"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/custom_button_minusplus"
+            android:text="@string/plus"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

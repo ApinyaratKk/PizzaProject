@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">Mister Pizza</string>
+    <string name="flash_deal">Flash deal ends in 2 hours click!</string>
+    <string name="pizza">Pizza</string>
+    <string name="others">Others</string>
+    <string name="drinks">Drinks</string>
+    <string name="combo">Combo Set</string>
+    <string name="family">Family Set</string>
+
+    <string name="flash_deal_activity">Flash Deal</string>
+
+    <string name="home_nav">Home</string>
+    <string name="order_nav">Order</string>
+    <string name="history_nav">History</string>
+    <string name="profile_nav">Profile</string>
+
+    <string name="combo_fragment">Combo Set</string>
+    <string name="flashDeal_fragment">Flash Deal</string>
+    <string name="pizza_menu_fragment">Pizza Menu</string>
+    <string name="drinks_menu_fragment">Drinks Menu</string>
+    <string name="others_menu_fragment">Others Menu</string>
+    <string name="family_fragment">Family Set</string>
+
+
+    <string name="user_id">User ID</string>
+    <string name="password">Password</string>
+    <string name="card_no">Card No.</string>
+    <string name="register">Register here</string>
+    <string name="login">Log in</string>
+    <string name="logout">Log out</string>
+
+    <string name="or_register">or Register</string>
+    <string name="title_activity_pasta">Pasta</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hi">Test</string>
+    //pizza
+    <string name="beefpizza"> Beef pizza </string>
+    <string name="pizza_bbq_chicken_deluxe">Pizza BBQ Chicken Deluxe</string>
+    <string name="bbqpizza">" BBQ pizza "</string>
+    <string name="pizza_hawaiian">Pizza Hawaiian</string>
+    <string name="cornpizza">" Corn pizza "</string>
+    <string name="pizza_tropical_seafood">Pizza Tropical Seafood</string>
+    <string name="tunapizza">" Tuna pizza"</string>
+    //minus plus
+    <string name="minus">-</string>
+
+    <string name="plus">+</string>
+
+    <string name="_0">0</string>
+    <string name="todo">TODO</string>
+
+    //price
+    <string name="_50_baht">50 Baht</string>
+    <string name="_99_baht">99 Baht</string>
+    <string name="_89_baht">89 Baht</string>
+    <string name="_199_baht">199 Baht</string>
+    <string name="_169_baht">169 Baht</string>
+    <string name="_29_baht">29 Baht</string>
+    <string name="_49_baht">49 baht</string>
+    //others
+    <string name="pasta">Pasta</string>
+    <string name="french_fries_s">French Fries S</string>
+    <string name="french_fries">"French Fries"</string>
+    <string name="french_fries_m">"French Fries M"</string>
+    <string name="chicken"> Chicken</string>
+    <string name="familyset1">Family Set 1</string>
+    <string name="familyset2">Family Set 2</string>
+    <string name="Pasta">Pasta</string>
+
+    <string name="beefpasta">" Beef Pasta "</string>
+
+    <string name="cheesepasta">" Cheese Pasta "</string>
+
+    <string name="porkpasta">" Pork Pasta "</string>
+
+    <string name="fried_chicken_M">" Fried chicken M "</string>
+
+    <string name="fried_chicken_s">" Fried chicken s "</string>
+
+    <string name="grilled_chicken_s">" Grilled Chicken S "</string>
+
+    <string name="grilled_chicken_m">" Grilled Chicken M "</string>
+
+    <string name="pepsi">" Pepsi "</string>
+
+    <string name="sprite">" Sprite "</string>
+
+    <string name="water">" Water "</string>
+
+    <string name="cokezero">" Cokezero "</string>
+
+</resources>

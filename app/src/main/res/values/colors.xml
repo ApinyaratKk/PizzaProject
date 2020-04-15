@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#CA3D3D</color>
+    <color name="colorPrimaryDark">#7F8C8D </color>
+    <color name="colorAccent">#190707</color>
+    <color name="font_color">#ECECEC</color>
+    <color name="endColor">#CA3D3D </color>
+    <color name="startColor">#190707</color>
+</resources>
