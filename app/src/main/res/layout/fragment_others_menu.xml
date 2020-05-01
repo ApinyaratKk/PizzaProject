@@ -3,14 +3,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OthersMenuFragment">
+    tools:context=".OthersMenuFragment"
+    android:background="@drawable/bg">
 
-    <TextView
-        android:layout_width="match_parent"
+    <RelativeLayout
+        android:layout_width="350dp"
         android:layout_height="match_parent"
-        android:text="@string/others_menu_fragment"
-        android:textStyle="bold"
-        android:textSize="30sp"
-        android:gravity="center"/>
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/salad"
+            android:id="@+id/saladFm_link"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/btn_gradient"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/font_color"/>
+
+        <Button
+            android:id="@+id/drinksFm_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/drinks"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/btn_gradient"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/font_color"/>
+
+        <Button
+            android:id="@+id/chickenFm_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/chicken"
+            android:layout_marginTop="190dp"
+            android:background="@drawable/btn_gradient"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/font_color"/>
+
+        <Button
+            android:id="@+id/goToOrderFm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/next"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/font_color"
+            android:background="@drawable/btn_gradient"
+            android:gravity="center"
+            android:layout_marginTop="420dp"
+            android:layout_marginStart="138dp"/>
+
+    </RelativeLayout>
 
 </FrameLayout>

@@ -1,42 +1,34 @@
 {
   "project_info": {
-    "project_number": "523228186547",
-    "firebase_url": "https://mister-pizza-dafb4.firebaseio.com",
-    "project_id": "mister-pizza-dafb4",
-    "storage_bucket": "mister-pizza-dafb4.appspot.com"
+    "project_number": "167801091158",
+    "firebase_url": "https://misterpizza-login.firebaseio.com",
+    "project_id": "misterpizza-login",
+    "storage_bucket": "misterpizza-login.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:523228186547:android:9f57716f268b6b07676dc6",
+        "mobilesdk_app_id": "1:167801091158:android:473c8d86397727137eb7f7",
         "android_client_info": {
           "package_name": "com.example.tester"
         }
       },
       "oauth_client": [
         {
-          "client_id": "523228186547-uv2neqiktfi8fu0v1agujb8agunm8kki.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.tester",
-            "certificate_hash": "66e5051b49f6f53df75af8cd1d8e94e145fc723f"
-          }
-        },
-        {
-          "client_id": "523228186547-eo7cgdmnmn35dic6h2i4jr855joicmo2.apps.googleusercontent.com",
+          "client_id": "167801091158-7a179rkrj76d70hcqsfbbg3op7errvmi.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDNMOB24aCiHz0bLtF-VhEcnHHOEuc5Slk"
+          "current_key": "AIzaSyDEUoWh2ikVe9GnWQLIyXY0AYT8MfgYJRs"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "523228186547-eo7cgdmnmn35dic6h2i4jr855joicmo2.apps.googleusercontent.com",
+              "client_id": "167801091158-7a179rkrj76d70hcqsfbbg3op7errvmi.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

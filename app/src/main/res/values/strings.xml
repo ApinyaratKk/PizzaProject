@@ -6,8 +6,11 @@
     <string name="drinks">Drinks</string>
     <string name="combo">Combo Set</string>
     <string name="family">Family Set</string>
-
+    <string name="payment">Payment Process</string>
+    //add string change profile pic
+    <string name="change_profile_pic">Change Profile</string>
     <string name="flash_deal_activity">Flash Deal</string>
+    <string name="save">Save</string>
 
     <string name="home_nav">Home</string>
     <string name="order_nav">Order</string>
@@ -29,18 +32,20 @@
     <string name="login">Log in</string>
     <string name="logout">Log out</string>
 
+    <string name="back">Back</string>
+
     <string name="or_register">or Register</string>
     <string name="title_activity_pasta">Pasta</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hi">Test</string>
     //pizza
     <string name="beefpizza"> Beef pizza </string>
-    <string name="pizza_bbq_chicken_deluxe">Pizza BBQ Chicken Deluxe</string>
-    <string name="bbqpizza">" BBQ pizza "</string>
+    <string name="pizza_bbq_chicken_deluxe">BBQ Chicken Deluxe</string>
+    <string name="bbqpizza">BBQ pizza</string>
     <string name="pizza_hawaiian">Pizza Hawaiian</string>
-    <string name="cornpizza">" Corn pizza "</string>
-    <string name="pizza_tropical_seafood">Pizza Tropical Seafood</string>
-    <string name="tunapizza">" Tuna pizza"</string>
+    <string name="cornpizza">Corn pizza</string>
+    <string name="pizza_tropical_seafood">Tropical Seafood</string>
+    <string name="tunapizza">Tuna pizza</string>
     //minus plus
     <string name="minus">-</string>
 
@@ -57,36 +62,47 @@
     <string name="_169_baht">169 Baht</string>
     <string name="_29_baht">29 Baht</string>
     <string name="_49_baht">49 baht</string>
+
     //others
     <string name="pasta">Pasta</string>
     <string name="french_fries_s">French Fries S</string>
-    <string name="french_fries">"French Fries"</string>
-    <string name="french_fries_m">"French Fries M"</string>
+    <string name="french_fries">French Fries</string>
+    <string name="french_fries_m">French Fries M</string>
     <string name="chicken"> Chicken</string>
     <string name="familyset1">Family Set 1</string>
     <string name="familyset2">Family Set 2</string>
     <string name="Pasta">Pasta</string>
+    <string name="salmon_salad">Salmon Salad</string>
+    <string name="beefpasta"> Beef Pasta </string>
+    <string name="cornsoup">Corn soup</string>
+    <string name="cheesepasta">Cheese Pasta</string>
+    //add salad
+    <string name="salad">Salad</string>
+    <string name="salmonsalad">Salmon Salad</string>
+    <string name="porkpasta">Pork Pasta</string>
+    <string name="beefsalad">Beef Salad</string>
 
-    <string name="beefpasta">" Beef Pasta "</string>
+    <string name="fried_chicken_M">Fried chicken M</string>
 
-    <string name="cheesepasta">" Cheese Pasta "</string>
+    <string name="fried_chicken_s">Fried chicken s</string>
 
-    <string name="porkpasta">" Pork Pasta "</string>
+    <string name="grilled_chicken_s">Grilled Chicken S</string>
 
-    <string name="fried_chicken_M">" Fried chicken M "</string>
+    <string name="grilled_chicken_m">Grilled Chicken M</string>
 
-    <string name="fried_chicken_s">" Fried chicken s "</string>
+    <string name="pepsi">Pepsi</string>
 
-    <string name="grilled_chicken_s">" Grilled Chicken S "</string>
+    <string name="sprite">Sprite</string>
 
-    <string name="grilled_chicken_m">" Grilled Chicken M "</string>
+    <string name="water">Water</string>
 
-    <string name="pepsi">" Pepsi "</string>
+    <string name="cokezero">Cokezero</string>
+    //add
+    <string name="comboset1">Combo Set 1</string>
+    <string name="comboset2">Combo Set 2</string>
+    <string name="soup">Soup</string>
+    <string name="next">Next</string>
 
-    <string name="sprite">" Sprite "</string>
 
-    <string name="water">" Water "</string>
-
-    <string name="cokezero">" Cokezero "</string>
 
 </resources>

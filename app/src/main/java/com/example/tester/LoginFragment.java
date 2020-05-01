@@ -1,5 +1,6 @@
 package com.example.tester;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -25,9 +26,8 @@ public class LoginFragment extends Fragment {
         registerLink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentTransaction fr = getFragmentManager().beginTransaction();
-                fr.replace(R.id.fragment_container,new RegisterFragment());
-                fr.commit();
+                Intent intent = new Intent(getActivity(),RegisterActivity.class);
+                startActivity(intent);
             }
         });
         return view;

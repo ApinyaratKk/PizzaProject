@@ -124,8 +124,7 @@
             android:backgroundTint="@color/colorPrimary"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:id="@+id/register_button"
-            android:clickable="true"/>
+            android:id="@+id/register_button" />
 
     </LinearLayout>
 

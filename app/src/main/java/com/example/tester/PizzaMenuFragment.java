@@ -18,7 +18,7 @@ public class PizzaMenuFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_pizza_menu, container, false);
+        View view = inflater.inflate(R.layout.fragment_pizza, container, false);
         return view;
     }
 }

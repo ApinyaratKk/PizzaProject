@@ -31,11 +31,6 @@ import static android.widget.Toast.makeText;
 
 public class RegisterFragment extends Fragment {
 
-    private EditText Username,Cardnumber,Password;
-    private Button registerButton;
-
-    //FirebaseDatabase rootNode;
-    //DatabaseReference RootRef;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -43,22 +38,10 @@ public class RegisterFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_register, container, false); //open fragment activity
 
-        Username = (EditText) view.findViewById(R.id.user_editText);
-        Cardnumber = (EditText) view.findViewById(R.id.card_editText);
-        Password = (EditText) view.findViewById(R.id.password_editText);
-        registerButton = (Button) view.findViewById(R.id.register_button);
-
-        registerButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                CreateAccount();
-            }
-        });
-
         return view;
 
     }
-    private void CreateAccount(){
+    /*private void CreateAccount(){
         String username = Username.getText().toString();
         String password = Password.getText().toString();
         String card = Cardnumber.getText().toString();
@@ -122,5 +105,5 @@ public class RegisterFragment extends Fragment {
 
             }
         });
-    }
+    }*/
 }

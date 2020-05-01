@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 
 public class OrderFragment extends Fragment{
@@ -25,11 +26,14 @@ public class OrderFragment extends Fragment{
         loginLink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentTransaction fr = getFragmentManager().beginTransaction();
+                /*FragmentTransaction fr = getFragmentManager().beginTransaction();
                 fr.replace(R.id.fragment_container,new LoginFragment());
-                fr.commit();
+                fr.commit();*/
+                Intent intent = new Intent(getActivity(),LoginActivity.class);
+                startActivity(intent);
             }
         });
+
     return view;
 
     }

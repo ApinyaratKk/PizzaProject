@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.tester.Prevalent.Prevalent;
 import com.google.android.material.tabs.TabLayout;
 import com.ismaeldivita.chipnavigation.ChipNavigationBar;
 
@@ -59,7 +60,15 @@ public class MainActivity extends AppCompatActivity {
                         fragment = new HistoryFragment();
                         break;
                     case R.id.profile:
-                        fragment = new ProfileFragment();
+                        try {
+                            if(Prevalent.currentOnlineUser.getUsername()!= null){
+                                fragment = new ProfileFragment();
+                            }else {
+                                fragment = new LoginFragment();
+                            }
+                        }catch (NullPointerException ignored){
+                        }
+                        
                         break;
                 }
                 if (fragment!=null){

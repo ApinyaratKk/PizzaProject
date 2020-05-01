@@ -1,64 +1,130 @@
 package com.example.tester;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
 
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link salad#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class salad extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    private Button MinusButton;
+    private Button PlusButton;
+    private TextView ordersalmonsalad;
+    private TextView orderbeefsalad;
+    private int countersalmonsalad;
+    private int counterbeefsalad;
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    //add this button
+    private Button BackToOtherFm;
 
-    public salad() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment salad.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static salad newInstance(String param1, String param2) {
-        salad fragment = new salad();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+    //salmonsalad
+    private View.OnClickListener clickListener1 = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            switch (view.getId()) {
+                case R.id.Minussalmonsalad:
+                    Minussalmonsalad();
+                    break;
+                case R.id.Plussalmonsalad:
+                    Plussalmonsalad();
+                    break;
+            }
         }
-    }
+    };
+    //beefsalad
+    private View.OnClickListener clickListener2 = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            switch (view.getId()) {
+                case R.id.Minusbeefsalad:
+                    Minusbeefsalad();
+                    break;
+                case R.id.Plusbeefsalad:
+                    Plusbeefsalad();
+                    break;
+            }
+        }
+    };
 
-    @Override
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_salad, container, false);
+        View view = inflater.inflate(R.layout.fragment_salad, container, false);
+
+        //add back to other fragment Button
+        BackToOtherFm = (Button) view.findViewById(R.id.backToOtherFm);
+
+        BackToOtherFm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction fr = getFragmentManager().beginTransaction();
+                fr.replace(R.id.fragment_container,new OthersMenuFragment());
+                fr.commit();
+            }
+        });
+
+        Button goToOrderFm = (Button) view.findViewById(R.id.goToOrderFm);
+        goToOrderFm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction fr = getFragmentManager().beginTransaction();
+                fr.replace(R.id.fragment_container,new OrderFragment());
+                fr.commit();
+            }
+        });
+
+        //salmonsalad
+        ordersalmonsalad = (TextView) view.findViewById(R.id.textview_ordersalmonsalad);
+        MinusButton = (Button) view.findViewById(R.id.Minussalmonsalad);
+        MinusButton.setOnClickListener(clickListener1);
+        PlusButton = (Button) view.findViewById(R.id.Plussalmonsalad);
+        PlusButton.setOnClickListener(clickListener1);
+        initCounter1();
+
+        //beefsalad
+        orderbeefsalad = (TextView) view.findViewById(R.id.textview_orderbeefsalad);
+        MinusButton = (Button) view.findViewById(R.id.Minusbeefsalad);
+        MinusButton.setOnClickListener(clickListener2);
+        PlusButton = (Button) view.findViewById(R.id.Plusbeefsalad);
+        PlusButton.setOnClickListener(clickListener2);
+        initCounter2();
+        return view;
+    }
+
+
+
+
+
+    //salmonsalad
+    private void initCounter1(){
+        countersalmonsalad=0;
+        ordersalmonsalad.setText(countersalmonsalad + "");
+    }
+    private void Plussalmonsalad(){
+        countersalmonsalad++;
+        ordersalmonsalad.setText(countersalmonsalad + "");
+    }
+    private void Minussalmonsalad(){
+        countersalmonsalad--;
+        ordersalmonsalad.setText(countersalmonsalad + "");
+    }
+    //beefsalad
+    private void initCounter2(){
+        counterbeefsalad=0;
+        orderbeefsalad.setText(counterbeefsalad + "");
+    }
+    private void Plusbeefsalad(){
+        counterbeefsalad++;
+        orderbeefsalad.setText(counterbeefsalad + "");
+    }
+    private void Minusbeefsalad(){
+        counterbeefsalad--;
+        orderbeefsalad.setText(counterbeefsalad + "");
     }
 }
+
