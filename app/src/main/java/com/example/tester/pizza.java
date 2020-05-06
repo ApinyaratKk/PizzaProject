@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 
 
 public class pizza extends Fragment {
@@ -86,17 +85,6 @@ public class pizza extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_pizza, container, false);
-        //add go to order fragment button
-        Button goToOrderFm = (Button) view.findViewById(R.id.goToOrderFm);
-
-        goToOrderFm.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FragmentTransaction fr = getFragmentManager().beginTransaction();
-                fr.replace(R.id.fragment_container,new OrderFragment());
-                fr.commit();
-            }
-        });
 
         //beef
         orderbeefpizza = (TextView) view.findViewById(R.id.orderbeefpizza);

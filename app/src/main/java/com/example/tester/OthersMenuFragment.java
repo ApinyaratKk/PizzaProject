@@ -42,16 +42,6 @@ public class OthersMenuFragment extends Fragment {
             }
         });
 
-        Button ChickenBtn = (Button) view.findViewById(R.id.chickenFm_link);
-        ChickenBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FragmentTransaction fr = getFragmentManager().beginTransaction();
-                fr.replace(R.id.fragment_container,new chicken());
-                fr.commit();
-            }
-        });
-
         Button goToOrderFm = (Button) view.findViewById(R.id.goToOrderFm);
         goToOrderFm.setOnClickListener(new View.OnClickListener() {
             @Override

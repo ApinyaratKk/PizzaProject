@@ -68,16 +68,6 @@ public class salad extends Fragment {
             }
         });
 
-        Button goToOrderFm = (Button) view.findViewById(R.id.goToOrderFm);
-        goToOrderFm.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FragmentTransaction fr = getFragmentManager().beginTransaction();
-                fr.replace(R.id.fragment_container,new OrderFragment());
-                fr.commit();
-            }
-        });
-
         //salmonsalad
         ordersalmonsalad = (TextView) view.findViewById(R.id.textview_ordersalmonsalad);
         MinusButton = (Button) view.findViewById(R.id.Minussalmonsalad);

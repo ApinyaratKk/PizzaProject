@@ -348,34 +348,6 @@
                     android:text="@string/plus"
                     android:textSize="18sp" />
             </LinearLayout>
-
-            <Button
-                android:id="@+id/backToOtherFm"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/back"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="@color/font_color"
-                android:background="@drawable/btn_gradient"
-                android:gravity="center"
-                android:layout_marginTop="680dp"
-                android:layout_marginStart="120dp"/>
-
-            <Button
-                android:id="@+id/goToOrderFm"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/next"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="@color/font_color"
-                android:background="@drawable/btn_gradient"
-                android:gravity="center"
-                android:layout_marginTop="680dp"
-                android:layout_marginStart="220dp"/>
         </RelativeLayout>
     </ScrollView>
 </RelativeLayout>
